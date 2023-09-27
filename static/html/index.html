@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/static/styles/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div id="task_selector">
+        <a href="/get_data">
+            <p>
+                <span>Go to see all saved tasks</span>
+                <img src="/static/images/database-svgrepo-com.svg" alt="">
+            </p>
+        </a>
+        <h4>Use this form to select data</h4>
+        <form id="fetch_data" action="/get_data_by_name" method="post">
+            <label for="nameToSearch">
+                Input task name to search
+            </label>
+            <input type="text" id="nameToSearch" name="nameToSearch">
+            <br>
+            <input type="submit" class="task_submit" value="Search">
+        </form>
+    </div>
+    <div id="form_container">
+        <h2>Fill this form to save task</h2>
+        <form action="/upload_data" method="post" accept-charset="UTF-8">
+            <label for="task_name">Input task</label>
+            <input type="text" id="task_name" name="taskName">
+            <br>
+            <label for="task_description">Input task description</label>
+            <input type="text" id="task_description" name="taskDescription">
+            <br>
+            <label for="task_deadline">Choose deadline</label>
+            <input id="task_deadline" type="date" name="taskDeadline">
+            <br>
+            <input type="submit" class="task_submit" value="Send">
+        </form>
+    </div>
+</body>
+</html>

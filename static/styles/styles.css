@@ -1,0 +1,56 @@
+#form_container form{
+    border: blue solid 2px;
+    display: inline-block;
+}
+#form_container form input{
+    margin: 10px;
+}
+
+.task_submit {
+    background: aqua;
+    width: 50px;
+    height: 30px;
+    margin-left: 150px;
+    margin-top: 15px;
+}
+
+#form_container {
+    left: 40%;
+    top: 30%;
+    position: absolute;
+}
+
+#task_selector {
+    position: absolute;
+    left: 40%;
+}
+
+#task_selector a{
+    border: 1px;
+    text-decoration: none;
+    color: black;
+}
+
+#task_selector p:hover {
+    background: cadetblue;
+    transition: 0.5s ease;
+}
+
+#task_selector .task_submit {
+    width: 100px;
+}
+
+#task_selector a p {
+    text-align: center;
+    font-size: 15px;
+    background: bisque;
+    width: 200px;
+    height: 50px;
+}
+
+#task_selector img {
+    position: relative;
+    top: 15%;
+    height: 30px;
+    width: 30px;
+}
